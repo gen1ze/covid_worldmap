@@ -26,4 +26,4 @@ circle_radius = m(last_column)
 
 center = {'lat' :20.593684 , 'lon' :78.96288}
 fig = px.density_mapbox(data_frame = df, lat = 'Lat', lon = 'Long', color_continuous_scale='thermal', radius = circle_radius, zoom = 0.6, mapbox_style = 'stamen-watercolor', hover_data = ['yesterday'] , hover_name = df.Country, title = 'total confirmed covid cases as of today', center = center)
-fig.show()
+fig.show(renderer="colab")
